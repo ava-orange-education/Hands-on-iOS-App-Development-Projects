@@ -2,8 +2,6 @@
 //  AppDelegate.swift
 //  Basics
 //
-//  Created by Aiswarya Kodali on 29/7/2023.
-//
 
 import UIKit
 
