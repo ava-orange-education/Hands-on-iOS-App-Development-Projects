@@ -1,7 +1,0 @@
-//
-// 
-//  TableViewExample
-//
-
-
-import Foundation
