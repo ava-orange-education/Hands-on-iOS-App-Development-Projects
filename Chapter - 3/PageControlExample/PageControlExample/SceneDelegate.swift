@@ -2,8 +2,7 @@
 //  SceneDelegate.swift
 //  PageControlExample
 //
-//  Created by Aiswarya Kodali on 2/9/2023.
-//
+
 
 import UIKit
 
