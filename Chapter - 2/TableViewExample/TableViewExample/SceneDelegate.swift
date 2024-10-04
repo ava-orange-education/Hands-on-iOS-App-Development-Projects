@@ -2,8 +2,7 @@
 //  SceneDelegate.swift
 //  TableViewExample
 //
-//  Created by Aiswarya Kodali on 12/8/2023.
-//
+
 
 import UIKit
 
