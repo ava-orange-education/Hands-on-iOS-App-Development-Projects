@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TextFieldExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yWD-Q2-LQo" userLabel="nameTextField">
+                                <rect key="frame" x="129" y="109" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Rs-de-86h">
+                                <rect key="frame" x="20" y="109" width="59" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KZF-fU-b3L">
+                                <rect key="frame" x="20" y="180" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jf7-Iu-2Zn" userLabel="emailTextField">
+                                <rect key="frame" x="129" y="173.66666666666666" width="244" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="JYN-Fd-PEa">
+                                <rect key="frame" x="129" y="257.66666666666669" width="240" height="130"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="fn4-CA-uQt"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About me :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpb-gh-QBT">
+                                <rect key="frame" x="20" y="312" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JYN-Fd-PEa" firstAttribute="top" secondItem="Jf7-Iu-2Zn" secondAttribute="bottom" constant="50" id="3HE-Gs-wo5"/>
+                            <constraint firstItem="Dpb-gh-QBT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4kN-et-XGw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JYN-Fd-PEa" secondAttribute="trailing" constant="24" id="7Cg-fl-waV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jf7-Iu-2Zn" secondAttribute="trailing" constant="20" id="7yj-Lj-pn1"/>
+                            <constraint firstItem="JYN-Fd-PEa" firstAttribute="leading" secondItem="Jf7-Iu-2Zn" secondAttribute="leading" id="HCE-94-aPz"/>
+                            <constraint firstItem="Jf7-Iu-2Zn" firstAttribute="centerX" secondItem="yWD-Q2-LQo" secondAttribute="centerX" id="P9X-fD-8Ko"/>
+                            <constraint firstItem="yWD-Q2-LQo" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="QAE-bb-Atg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yWD-Q2-LQo" secondAttribute="trailing" constant="20" id="htW-rc-SAC"/>
+                            <constraint firstItem="yWD-Q2-LQo" firstAttribute="leading" secondItem="4Rs-de-86h" secondAttribute="trailing" constant="50" id="jVh-8y-R9M"/>
+                            <constraint firstItem="4Rs-de-86h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="k6n-x3-Fyg"/>
+                            <constraint firstItem="KZF-fU-b3L" firstAttribute="top" secondItem="4Rs-de-86h" secondAttribute="bottom" constant="50" id="kmN-VB-n5G"/>
+                            <constraint firstItem="JYN-Fd-PEa" firstAttribute="centerY" secondItem="Dpb-gh-QBT" secondAttribute="centerY" id="kz8-e4-TUN"/>
+                            <constraint firstItem="Jf7-Iu-2Zn" firstAttribute="centerY" secondItem="KZF-fU-b3L" secondAttribute="centerY" id="pAI-NS-bf9"/>
+                            <constraint firstItem="4Rs-de-86h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="sQv-IT-KMO"/>
+                            <constraint firstItem="KZF-fU-b3L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sSA-Dj-fh2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="aboutMeTextView" destination="JYN-Fd-PEa" id="1cX-m7-Isa"/>
+                        <outlet property="emailTextField" destination="Jf7-Iu-2Zn" id="ZyG-yy-x64"/>
+                        <outlet property="nameTextfield" destination="yWD-Q2-LQo" id="1Zy-hv-fJq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-14.503816793893129" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
